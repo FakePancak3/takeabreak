@@ -25,9 +25,8 @@ TakeABreak is a small **hobby project** built to provide a simple reminder to st
 ## ✨ Features
 
 * Simple break reminders
-* Lightweight Python application
+* Lightweight
 * Minimal and easy-to-use interface
-* Designed to run locally
 * Open source and available to modify
 
 ## ⚠️ Windows SmartScreen Warning
