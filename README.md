@@ -1,123 +1,124 @@
 <div align="center">
   <picture>
-    <!-- Dark mode image -->
     <source media="(prefers-color-scheme: dark)" srcset="tdark.png">
-    <!-- Light mode image (fallback) -->
-    <img src="tlight.png" alt="Description of the image" width="600">
+    <img src="tlight.png" alt="TakeABreak" width="600">
   </picture>
 </div>
 
 <p align="center">
-  <a href="" target="_blank">
-    <img src="https://img.shields.io/badge/platform-windows-blue?style=for-the-badge" alt="idk" />
-  </a>
-  <a href="" target="_blank">
-    <img src="https://img.shields.io/badge/license-mit-yellow?style=for-the-badge" alt="license" />
-  </a>
+  <img src="https://img.shields.io/badge/platform-windows-blue?style=for-the-badge" alt="windows">
+  <img src="https://img.shields.io/badge/license-mit-yellow?style=for-the-badge" alt="license">
 </p>
 
 # TakeABreak
 
-A simple Python application that reminds you to take a break from your screen
+A simple Python app that reminds you to take a break from your screen
 
-TakeABreak is a small **hobby project** built to provide a simple reminder to step away from your computer every once in a while. Its intentionally lightweight and isn't intended to be a large commercial application
+TakeABreak is a small hobby project I made to remind people to step away from their computer every now and then
 
-## ✨ Features
+Its meant to be simple and lightweight and its not really meant to be some big professional application
+
+## Features
 
 * Simple break reminders
 * Lightweight
-* Minimal and easy-to-use interface
-* Open source and available to modify
+* Simple interface
+* Open source
+* Easy to change and mess around with
 
-## ⚠️ Windows SmartScreen Warning
+## Windows SmartScreen Warning
 
-When downloading or running a pre-built version of TakeABreak on Windows you may see a **Microsoft Defender SmartScreen** warning
+If you download the prebuilt version of TakeABreak on Windows you might get a Microsoft Defender SmartScreen warning
 
-This is expected
+This is because the executable is not signed
 
-TakeABreak is a **hobby project and the Windows executable is unsigned**, meaning it does not have a codesigning certificate that Windows can use to verify the publishers identity
+TakeABreak is just a hobby project and I do not have a code signing certificate for it so Windows cannot verify the publisher
 
-Because the executable is unsigned and may not have an established reputation with SmartScreen windows can display a warning even though the warning itself does **not** mean that the application is malicious
+Windows can sometimes warn about unsigned programs especially when they are not well known yet
 
-If you downloaded the executable from the official repository you can inspect the source code yourself and if you prefer, build the application from source instead of using a prebuilt executable
+The warning does not automatically mean that the program is malicious
 
-## 🛠️ Building From Source
+If you are not comfortable running the prebuilt executable you can always look through the source code and build it yourself
 
-You can build and run TakeABreak directly from the source code using Git
+## Building From Source
+
+You can build and run TakeABreak yourself using Git and Python
 
 ### Requirements
 
-* [Python](https://www.python.org/)
-* [Git](https://git-scm.com/)
-* Any dependencies required by the project
+* Python
+* Git
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone https://github.com/FakePancak3/takeabreak.git
 ```
 
-### 2. Enter the project directory
+### Go into the project folder
 
 ```bash
 cd takeabreak
 ```
 
-### 3. Run the application
+### Run the app
 
 ```bash
 python takeabreak.py
 ```
 
-Depending on your Python installation you may need to use:
+If python does not work on your system you can also try
 
 ```bash
 python3 takeabreak.py
 ```
 
-### Building an Executable
+## Building an Executable
 
-If you want to create your own Windows executable from the source you can use a Python packaging tool such as PyInstaller
+If you want to make your own Windows executable you can use PyInstaller
 
-Install it with:
+First install it with
 
 ```bash
 pip install pyinstaller
 ```
 
-Then build the application with:
+Then run
 
 ```bash
 pyinstaller --onefile --windowed takeabreak.py
 ```
 
-The resulting executable will be placed in the `dist` directory
+Your executable should then be inside the dist folder
 
-> Building the application yourself does not automatically make the executable digitally signed a selfbuilt executable can therefore still trigger Windows SmartScreen warnings
+Building it yourself does not sign the executable so Windows SmartScreen may still show a warning
 
-## 🎯 Why?
+## Why
 
-This project was made as a small personal/hobby project to experiment with Python and create something useful for everyday computer use.
+This started as a small personal project and something I wanted to make for myself
 
-## 🤝 Contributing
+I also wanted to experiment with Python and make something that could actually be useful
 
-This is primarily a hobby project, but suggestions, bug reports, and improvements are welcome
+## Contributing
 
-If youd like to contribute:
+This is mainly just a hobby project but if you find a bug or want to improve something feel free to contribute
+
+If you want to contribute
 
 1. Fork the repository
 2. Create a new branch
 3. Make your changes
-4. Test them locally
+4. Test everything
 5. Open a pull request
-## 📄 License
 
-TakeABreak is released under the **MIT License**.
+## License
 
-See [`LICENSE`](LICENSE) for the full license text.
+TakeABreak is released under the MIT License
 
-## 🔗 Repository
+See the LICENSE file for more information
 
-Source code:
+## Repository
+
+The source code can be found on GitHub
 
 https://github.com/FakePancak3/takeabreak
